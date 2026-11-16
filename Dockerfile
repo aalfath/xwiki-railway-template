@@ -12,7 +12,7 @@ RUN apt-get update \
 COPY railway-start.sh /usr/local/bin/railway-start.sh
 RUN chmod 755 /usr/local/bin/railway-start.sh
 
-# All wiki data (attachments, installed extensions, Solr index, logs) lives here: mount a volume.
-VOLUME /usr/local/xwiki
+# All wiki data (attachments, installed extensions, Solr index, logs) lives in /usr/local/xwiki:
+# the template mounts a Railway volume there (Railway doesn't accept a VOLUME instruction).
 
 ENTRYPOINT ["/usr/local/bin/railway-start.sh"]
