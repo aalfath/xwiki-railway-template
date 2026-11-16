@@ -1,5 +1,7 @@
 # XWiki on Railway
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/xwiki-1?utm_medium=integration&utm_source=button&utm_campaign=xwiki)
+
 Railway template for [XWiki](https://www.xwiki.org), the open-source enterprise wiki and application platform.
 
 It deploys:
